@@ -168,14 +168,65 @@ print(df.describe())
 print(df.info())
 ```
 
+<br><br>
+
+
+
+## Key Concepts
+
+### Anomaly / Outlier
+Anomalies or outliers are data points that deviate significantly from the majority and may indicate errors, rare events, or fraud.
+
+### Anomaly Detection
+Techniques to identify such unusual data points, including statistical, proximity-based, and machine learning methods.
+
+### Fraud Detection
+Identifying fraudulent transactions or activities that typically manifest as anomalies in data.
+
+<br>
+
+## Tips for Efficient and Effective Analysis
+
+- **Significance of Mining**  
+  - *Statistical significance*: Confidence in results, ensured by properly prepared datasets.  
+  - *Practical significance*: Real-world applicability of insights.
 
 <br>
 
 
+- **Data Characteristics Influence Results**  
+  The properties of the dataset affect analysis outcomes significantly.
 
 
+<br>
 
 
+- **Know Your Data**  
+  Preliminary exploration and descriptive statistics help understand data distributions.
+
+<br>
+
+
+- **Parsimony Principle**  
+  Choose models that balance complexity and interpretability.
+
+<br>
+
+
+- **Error Verification & Model Performance**  
+  Check prediction errors, rule significance, and algorithm performance rigorously.
+
+
+<br>
+
+- **Validation of Results**  
+  Compare multiple methods; assess generalization capacity; combine techniques; involve domain experts to validate findings.
+
+
+<br><br>
+
+
+==============================  Still shaping this repo 🏄 ==============================
 
 
 
