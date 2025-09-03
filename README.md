@@ -177,11 +177,27 @@ print(df.info())
 ### Anomaly / Outlier
 Anomalies or outliers are data points that deviate significantly from the majority and may indicate errors, rare events, or fraud.
 
+
+<br>
+
+
 ### Anomaly Detection
 Techniques to identify such unusual data points, including statistical, proximity-based, and machine learning methods.
 
+
+<br>
+
 ### Fraud Detection
 Identifying fraudulent transactions or activities that typically manifest as anomalies in data.
+
+<br>
+
+> [!TIP]
+>
+> [Access Code](https://github.com/Quantum-Software-Development/5-DataMining_DataCleaning_Preparation_Anomalies_Outlier/blob/f9ce063363d8b7139d6639efde5cc6c575dfaa47/Fraud%20Detection%20Concepts%20with%20Mini%20Data/code_Fraud%20Detection%20Concepts%20with%20Mini%20Data/Fraud_Detection_Concepts_with__MiniData.ipynb) - Fraud Detection Concepts with Mini Data
+>
+
+
 
 <br>
 
