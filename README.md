@@ -137,10 +137,26 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 <br><br><br><br>
 
 
+
 <!-- ========================== [Bibliographr ====================  -->
 
 <br><br>
 
+
+## [Bibliography]()
+
+[1](). **Castro, L. N. & Ferrari, D. G.** (2016). *Introduction to Data Mining: Basic Concepts, Algorithms, and Applications*. Saraiva.
+
+[2](). **Ferreira, A. C. P. L. et al.** (2024). *Artificial Intelligence – A Machine Learning Approach*. 2nd Ed. LTC.
+
+[3](). **Larson & Farber** (2015). *Applied Statistics*. Pearson.
+
+<br><br>
+
+      
+<!-- ======================================= Bibliography Portugues ===========================================  -->
+
+<!--
 
 ## [Bibliography]()
 
@@ -153,7 +169,7 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 
 
 <br><br>
-
+-->
 
 <!-- ======================================= Start Footer ===========================================  -->
 
