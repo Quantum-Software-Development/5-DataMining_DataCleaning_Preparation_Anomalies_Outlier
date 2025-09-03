@@ -78,17 +78,98 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 
 > [!TIP]
 > 
->  This repository is a review of the Statistics course from the undergraduate program Humanities, AI and Data Science at PUC-SP.
+>  This repository makes part of the  Data Mining, course from the undergraduate program Humanities, AI and Data Science at PUC-SP.
 >
->  Access Data Mining [Main Repository](https://github.com/Quantum-Software-Development/1-Main_DataMining_Repository)
+>  Access Data Mining [Main Reposi tory](https://github.com/Quantum-Software-Development/1-Main_DataMining_Repository)
 > 
->  If you’d like to explore the full materials from the 1st year (not only the review), you can visit the complete repository [here](https://github.com/FabianaCampanari/PracticalStats-PUCSP-2024).
->
->
-
-
 
 <!-- =======================================END DEFAULT HEADER ===========================================  -->
+
+<br><br>
+
+
+This repository addresses fundamental concepts and methodologies in Data Mining, with an emphasis on **data cleaning, preparation**, and the **identification of anomalies and outliers**. The material is grounded in a comprehensive reference document that integrates theoretical foundations with practical applications, including Python-based implementations for the treatment of heterogeneous and noisy datasets.
+
+It constitutes a structured starting point for the systematic study and application of Data Mining techniques, particularly those related to data preprocessing, anomaly and outlier detection, and validation. The repository also provides contextualized examples and executable Python code to support empirical exploration and reproducibility.
+
+
+<br><br>
+
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Dataset for Study](#dataset-for-study)
+- [Pandas Functions for Data Exploration](#pandas-functions-for-data-exploration)
+- [Key Concepts](#key-concepts)
+  - Anomaly
+  - Outlier
+  - Anomaly Detection
+  - Fraud Detection
+- [Tips for Efficient and Effective Analysis](#tips-for-efficient-and-effective-analysis)
+- [Statistical and Practical Significance](#statistical-and-practical-significance)
+- [Characteristics and Understanding of Data](#characteristics-and-understanding-of-data)
+- [Parsimony Principle in Model Selection](#parsimony-principle-in-model-selection)
+- [Error Checking and Validation](#error-checking-and-validation)
+- [Learning Paradigms](#learning-paradigms)
+- [Applications](#applications)
+- [Sentiment Analysis in Social Networks](#sentiment-analysis-in-social-networks)
+- [Credit Card Fraud Detection](#credit-card-fraud-detection)
+- [Non-Technical Losses in Electrical Energy](#non-technical-losses-in-electrical-energy)
+- [Energy Load Segmentation](#energy-load-segmentation)
+- [Steel Process Modeling](#steel-process-modeling)
+
+
+<br><br>
+
+
+## Introduction
+
+The exponential growth of data generation necessitates intelligent techniques such as **Data Mining** to extract valuable knowledge from raw data. This process involves cleaning, preparing, mining, and validating data to enable effective decision-making.
+
+<br><br>
+
+
+## Dataset for Study
+
+We use a publicly available, small, **dirty dataset** exemplifying missing values, duplicates, and inconsistencies to demonstrate concepts of data cleaning and anomaly detection.
+
+Example dataset: [Titanic dataset](https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv)  
+This dataset contains missing values and requires preprocessing.
+
+
+<br><br>
+
+
+## Pandas Functions for Data Exploration
+
+<br>
+
+- `dataframe.describe()`  
+  Displays statistical summary including count, mean, std, min, quartiles, and max.
+
+<br>
+
+- `dataframe.info()`  
+  Shows information such as number of non-null entries and data types for each column.
+
+
+<br>
+
+Example usage:
+
+<br>
+
+```Python
+import pandas as pd
+
+df = pd.read_csv('titanic.csv')
+print(df.describe())
+print(df.info())
+```
+
+
+<br>
 
 
 
