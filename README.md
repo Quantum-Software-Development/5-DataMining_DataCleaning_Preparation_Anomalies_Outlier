@@ -557,6 +557,34 @@ plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
 
 Feature Distributions (Histograms):
 
+<br><br>
+
+<img width="1358" height="1188" alt="Image" src="https://github.com/user-attachments/assets/c41a65c8-7725-4b9a-90ad-865c69aefadc" />
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
