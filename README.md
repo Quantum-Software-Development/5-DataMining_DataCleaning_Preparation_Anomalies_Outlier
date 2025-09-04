@@ -563,6 +563,7 @@ Feature Distributions (Histograms):
 
 <br><br>
 
+<img width="1740" height="1160" alt="Image" src="https://github.com/user-attachments/assets/d34f548a-a84b-4200-91cf-9a0f8bb09bfb" />
 
 
 
