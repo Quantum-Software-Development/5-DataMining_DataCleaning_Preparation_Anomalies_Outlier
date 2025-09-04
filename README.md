@@ -580,7 +580,7 @@ plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
 <br><br>
 
 
-<!--
+
 ### 1- Feature Distributions (Histograms):
 
 <br>
@@ -604,7 +604,7 @@ plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
 
 <img width="1230" height="1198" alt="Image" src="https://github.com/user-attachments/assets/26e95e05-6873-438c-8d76-1aa6ce277a7d" />
 
-<br><br>
+<br><
 
 ### 4- Correlation Matrix
 
@@ -612,9 +612,10 @@ plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
 
 <img width="1064" height="914" alt="Image" src="https://github.com/user-attachments/assets/0fac7a0a-37aa-4319-a2c6-6189ce46b46f" />
 
+
 <br><br>
 
--->
+
 
 
 
