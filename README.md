@@ -421,10 +421,141 @@ print(df[df['outlier'] == -1])
 
 ## Python Example: [Fraud Detection with Mini Data]()
 
+<br><br>
+
+### Task
+
+Refactor the entire Python notebook for binary classification. Use a small dataset that runs quickly. Include detailed explanations in both Portuguese and English using hashtags. Implement dark mode plotting with a turquoise color scheme. Start the code from the data loading stage, deleting any previous code related to the random forest model or the larger dataset.
 
 <br><br>
 
 
+###  [Cell 1]()
+
+<br><br>
+
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# 1. Load a smaller dataset (e.g., Iris dataset for binary classification - e.g., Versicolor vs Virginica)
+# Carregar um conjunto de dados menor (por exemplo, conjunto de dados Iris para classificação binária - por exemplo, Versicolor vs Virginica)
+from sklearn.datasets import load_iris
+iris = load_iris()
+df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+df['target'] = iris.target
+
+# For binary classification, let's use only two classes (e.g., 1 and 2)
+# Para classificação binária, vamos usar apenas duas classes (por exemplo, 1 e 2)
+df_binary = df[df['target'].isin([1, 2])]
+df_binary['target'] = df_binary['target'].replace({1: 0, 2: 1}) # Rename classes to 0 and 1
+# Renomear classes para 0 e 1
+
+# 2. Display the first few rows of the loaded DataFrame.
+# Exibir as primeiras linhas do DataFrame carregado.
+print("First 5 rows of the dataset:")
+# Primeiras 5 linhas do conjunto de dados:
+display(df_binary.head())
+
+# 3. Display concise information about the DataFrame.
+# Exibir informações concisas sobre o DataFrame.
+print("\nDataset Info:")
+# Informações do conjunto de dados:
+df_binary.info()
+
+# 4. Calculate and display the distribution of the target variable.
+# Calcular e exibir a distribuição da variável alvo.
+print("\nClass Distribution:")
+# Distribuição de Classes:
+display(df_binary['target'].value_counts())
+
+# 5. Set up matplotlib for dark mode plotting.
+# Configurar matplotlib para plotagem em modo escuro.
+plt.style.use('dark_background')
+
+# Set text color to white for better visibility in dark mode
+# Definir a cor do texto para branco para melhor visibilidade no modo escuro
+plt.rcParams['text.color'] = 'white'
+plt.rcParams['axes.labelcolor'] = 'white'
+plt.rcParams['xtick.color'] = 'white'
+plt.rcParams['ytick.color'] = 'white'
+plt.rcParams['axes.edgecolor'] = 'white'
+plt.rcParams['figure.facecolor'] = '#2b2b2b' # Dark background for figure
+plt.rcParams['axes.facecolor'] = '#2b2b2b' # Dark background for axes
+
+# 6. Define a turquoise color palette.
+# Definir uma paleta de cores turquesa.
+turquoise_palette = ['#40E0D0', '#48D1CC', '#00CED1', '#5F9EA0', '#008B8B']
+print("\nTurquoise color palette defined.")
+# Paleta de cores turquesa definida.
+```
+
+
+<br><br>
+
+###  [Cell 2]()
+
+<br><br>
+
+
+```python
+# 1. Create histograms for each feature in df_binary with dual-language titles and labels.
+# 1. Criar histogramas para cada característica em df_binary com títulos e rótulos em dois idiomas.
+print("Feature Distributions (Histograms):")
+# Distribuições das Características (Histogramas):
+# Use only the first color from the palette for histograms
+df_binary.hist(figsize=(12, 10), color=turquoise_palette[0], bins=15)
+plt.suptitle('Feature Distributions / Distribuições das Características', y=1.02, fontsize=16)
+plt.tight_layout()
+plt.show()
+plt.savefig(f'{plot_dir}/feature_histograms.png') # Save histogram plot
+
+# 2. Generate box plots for each feature, comparing distributions across target classes with dual-language titles and labels.
+# 2. Gerar box plots para cada característica, comparando as distribuições entre as classes alvo com títulos e rótulos em dois idiomas.
+print("\nFeature Distributions by Target Class (Box Plots):")
+# Distribuições das Características por Classe Alvo (Box Plots):
+fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+axes = axes.flatten()
+for i, col in enumerate(df_binary.columns[:-1]):
+    # Removed palette argument from boxplot as it's not used with hue and causes a warning
+    sns.boxplot(x='target', y=col, data=df_binary, ax=axes[i])
+    axes[i].set_title(f'{col} Distribution by Target Class / Distribuição de {col} por Classe Alvo')
+    axes[i].set_xlabel('Target Class / Classe Alvo')
+    axes[i].set_ylabel(col)
+plt.tight_layout()
+plt.show()
+plt.savefig(f'{plot_dir}/feature_box_plots.png') # Save box plot
+
+# 3. Create a pair plot of the features in df_binary, colored by the 'target' variable, with a dual-language title.
+# 3. Criar um pair plot das características em df_binary, colorido pela variável 'target', com um título em dois idiomas.
+print("\nPair Plot of Features by Target Class:")
+# Pair Plot das Características por Classe Alvo:
+# Use only the first two colors from the palette for the two classes
+sns.pairplot(df_binary, hue='target', palette=turquoise_palette[:2], diag_kind='kde')
+plt.suptitle('Pair Plot of Features by Target Class / Pair Plot das Características por Classe Alvo', y=1.02, fontsize=16)
+plt.show()
+plt.savefig(f'{plot_dir}/feature_pair_plot.png') # Save pair plot
+
+# 4. Calculate and display the correlation matrix for the features in df_binary and visualize it with a heatmap and dual-language titles and labels.
+# 4. Calcular e exibir a matriz de correlação para as características em df_binary e visualizá-la com um heatmap e títulos e rótulos em dois idiomas.
+print("\nCorrelation Matrix:")
+# Matriz de Correlação:
+correlation_matrix_binary = df_binary.corr()
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix_binary, annot=True, cmap='viridis', fmt=".2f", linewidths=.5)
+plt.title('Correlation Matrix / Matriz de Correlação', fontsize=16)
+plt.xticks(rotation=45, ha='right')
+plt.yticks(rotation=0)
+plt.tight_layout()
+plt.show()
+plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
+```
+
+<br><br>
+
+Feature Distributions (Histograms):
 
 
 
