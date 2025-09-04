@@ -555,7 +555,7 @@ plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
 
 <br>
 
-Feature Distributions (Histograms):
+### 1- Feature Distributions (Histograms):
 
 <br>
 
@@ -563,10 +563,20 @@ Feature Distributions (Histograms):
 
 <br><br>
 
+### 2- sepal length (cm) Distribution by Target Class
+
+<br>
+
 <img width="1740" height="1160" alt="Image" src="https://github.com/user-attachments/assets/d34f548a-a84b-4200-91cf-9a0f8bb09bfb" />
 
 
+<br><br>
 
+### 3-Pair Plot of Features by Target Class
+
+<br>
+
+<img width="1230" height="1198" alt="Image" src="https://github.com/user-attachments/assets/26e95e05-6873-438c-8d76-1aa6ce277a7d" />
 
 
 
