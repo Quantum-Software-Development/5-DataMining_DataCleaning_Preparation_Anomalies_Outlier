@@ -242,10 +242,56 @@ Identifying fraudulent transactions or activities that typically manifest as ano
 <br><br>
 
 
-==============================  Still shaping this repo 🏄 ==============================
+## Formulas and Concepts
+
+### Interquartile Range (IQR) rule for outliers:
+
+<br>
+
+$\Huge IQR = Q_3 - Q_1$
+
+<br><br>
+
+```latex
+\Huge IQR = Q_3 - Q_1
+```
 
 
+<br><br>
 
+
+$\Huge \text{Outlier if } x < Q_1 - 1.5 \times IQR \text{ or } x > Q_3 + 1.5 \times IQR$
+
+
+<br><br>
+
+
+```latex
+\Huge \text{Outlier if } x < Q_1 - 1.5 \times IQR \text{ or } x > Q_3 + 1.5 \times IQR
+```
+
+
+<br><br>
+
+
+### Z-Score for detecting outliers:
+
+<br><br>
+
+
+$\Huge Z = \frac{x - \mu}{\sigma}$
+
+
+<br><br>
+
+```latex
+\Huge Z = \frac{x - \mu}{\sigma}
+```
+
+
+<br>
+
+Where \(x\) is a data point, \(\mu\) mean, and \(\sigma\) standard deviation.
 
 
 
