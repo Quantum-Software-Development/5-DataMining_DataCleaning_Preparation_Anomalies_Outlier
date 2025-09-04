@@ -378,12 +378,51 @@ Fraud mitigation includes prevention (security measures) and detection (rapid id
 
 
 
+<br><br>
+
+## Python Example: [Data Cleaning and Anomaly Detection]()
 
 
+<br><br>
+
+```
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import IsolationForest
+
+# Load dataset
+
+df = pd.read_csv('titanic.csv')
+
+# Statistical overview
+
+print(df.describe())
+print(df.info())
+
+# Handling missing values
+
+df.fillna(df.median(numeric_only=True), inplace=True)  \# Impute missing numeric data
+
+# Detecting outliers using Isolation Forest
+
+iso_forest = IsolationForest(contamination=0.1)
+outliers = iso_forest.fit_predict(df.select_dtypes(include=[np.number]))
+df['outlier'] = outliers
+
+# Mark outliers (-1) and normal points (1)
+
+print(df['outlier'].value_counts())
+print(df[df['outlier'] == -1])
+
+```
+
+<br><br>
 
 
+## Python Example: [Fraud Detection with Mini Data]()
 
 
+<br><br>
 
 
 
