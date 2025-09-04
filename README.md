@@ -291,7 +291,7 @@ $\Huge Z = \frac{x - \mu}{\sigma}$
 
 <br>
 
-Where \(x\) is a data point, \(\mu\) mean, and \(\sigma\) standard deviation.
+### [Where](): $\(x\)$ is a data point, $\(\mu\)$ mean, and $\(\sigma\)$ standard deviation.
 
 
 
