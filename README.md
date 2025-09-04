@@ -385,7 +385,7 @@ Fraud mitigation includes prevention (security measures) and detection (rapid id
 
 <br><br>
 
-```
+```python
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import IsolationForest
