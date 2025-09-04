@@ -293,6 +293,103 @@ $\Huge Z = \frac{x - \mu}{\sigma}$
 
 ### [Where](): $\(x\)$ is a data point, $\(\mu\)$ mean, and $\(\sigma\)$ standard deviation.
 
+<br><br>
+
+
+## Learning Paradigms
+
+<br>
+
+| Paradigm               | Description                                                            | Example Algorithms                          |
+|-----------------------|------------------------------------------------------------------------|---------------------------------------------|
+| Supervised Learning    | Training with labeled data; learns mapping from inputs to outputs      | Decision Trees, Random Forest, SVM           |
+| Unsupervised Learning  | Training with unlabeled data; discovers patterns or groups             | K-Means Clustering, DBSCAN, PCA              |
+| Lazy Learning          | Defers generalization until a query is made                            | K-Nearest Neighbors (KNN)                     |
+
+
+<br><br>
+
+### Example: Decision Tree
+A model is trained by partitioning data based on attribute splits optimizing a criterion like information gain.
+
+<br>
+
+### Example: K-Nearest Neighbors (KNN)
+Classifies new data by looking at the 'k' closest known examples (lazy learning).
+
+
+<br><br>
+
+
+## Applications
+
+Extensive use of data mining techniques in:
+
+- Credit analysis and prediction
+- Fraud detection
+- Financial market prediction
+- Customer relationship management
+- Corporate bankruptcy prediction
+- Energy sector
+- Education, logistics, supply chain management
+- Environment, social networks, ecommerce
+
+<br><br>
+
+## Sentiment Analysis in Social Networks
+
+Classifying texts based on expressed sentiments (positive, negative, neutral) to measure public opinion, marketing effectiveness, and product feedback.
+
+
+<br><br>
+
+## Non-Technical Losses in Electrical Energy
+
+- **Technical losses**: Intrinsic to electrical systems.
+- **Commercial losses**: Errors, unmeasured consumption, fraud.
+
+Data mining supports identifying irregularities and optimizing inspections.
+
+<br><br>
+
+
+## Energy Load Segmentation
+
+Use clustering to segment typical daily electricity consumption patterns to improve demand prediction.
+
+
+<br><br>
+
+
+## Steel Process Modeling
+
+Data mining to predict chemical composition and optimize production processes in steel industry.
+
+
+<br><br>
+
+## Credit Card Fraud Detection
+
+Fraud categories:
+- **Application Fraud**: Using fake personal info to obtain cards.
+- **Behavioral Fraud**: Unauthorized use of genuine card user's data.
+
+Fraud mitigation includes prevention (security measures) and detection (rapid identification of suspicious transactions).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
