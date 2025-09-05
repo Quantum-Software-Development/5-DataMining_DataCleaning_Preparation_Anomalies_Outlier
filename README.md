@@ -190,16 +190,9 @@ Techniques to identify such unusual data points, including statistical, proximit
 ### Fraud Detection
 Identifying fraudulent transactions or activities that typically manifest as anomalies in data.
 
-<br>
-
-> [!TIP]
->
-> [Access Code](https://github.com/Quantum-Software-Development/5-DataMining_DataCleaning_Preparation_Anomalies_Outlier/blob/f9ce063363d8b7139d6639efde5cc6c575dfaa47/Fraud%20Detection%20Concepts%20with%20Mini%20Data/code_Fraud%20Detection%20Concepts%20with%20Mini%20Data/Fraud_Detection_Concepts_with__MiniData.ipynb) - Fraud Detection Concepts with Mini Data
->
-
-
 
 <br>
+
 
 ## Tips for Efficient and Effective Analysis
 
@@ -378,12 +371,22 @@ Fraud mitigation includes prevention (security measures) and detection (rapid id
 
 
 
-<!-- =======================================START TITANIC Coide =========================================== 
 
 ## Python Example: [Data Cleaning and Anomaly Detection]()
 
+<br>
+
+> [!TIP]
+>
+> [Access Code]() - Fraud Detection with Random Forest & Logistic Regression
+>
+>
+
 
 <br><br>
+
+
+<!-- =======================================START TITANIC Coide =========================================== 
 
 ```python
 import pandas as pd
@@ -427,6 +430,15 @@ print(df[df['outlier'] == -1])
 # Python Example: [Fraud Detection with Mini Data]()
 
 <br>
+
+> [!TIP]
+>
+> [Access Code](https://github.com/Quantum-Software-Development/5-DataMining_DataCleaning_Preparation_Anomalies_Outlier/blob/cf75362829729905cad42950a70ce35ec1755506/Code_Fraud_Detection_RandonForrest_Logistic%20Regressio/Code_Fraud_Detection_RandonForrest_Logistic%20Regression/Fraud_Detection_RandonForrest_Logistic_Regression__MiniData.ipynb) - Fraud Detection with Random Forest & Logistic Regression
+>
+>
+
+
+<br><br>
 
 
 ##  [Cell 1]() -  Data loading and Initial Understanding
