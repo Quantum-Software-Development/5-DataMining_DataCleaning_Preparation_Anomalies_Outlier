@@ -372,9 +372,14 @@ Fraud mitigation includes prevention (security measures) and detection (rapid id
 
 
 
-## Python Example: [Data Cleaning and Anomaly Detection]()
+## Python Example: [Titanic - Exploratory Data Analysis]() 
 
 <br>
+
+ This code guides through loading data, exploratory analysis, cleaning, outlier detection, normalization, modeling, and validation.
+
+<br>
+
 
 > [!TIP]
 >
@@ -422,12 +427,28 @@ print(df[df['outlier'] == -1])
 <!-- =======================================TITSNIC END  ===========================================  -->
 
 
-<br><br><br>
+<br><br>
 
 <!-- =======================================START Fraud Detction CODE ===========================================-->
 
 
 # Python Example: [Fraud Detection with Mini Data]()
+
+<br>
+
+
+Below is the structured fraud detection code, organized cell by cell. It includes explanations about the dataset, along with additional techniques such as **SMOTE for class balancing**, **Random Forest hyperparameter tuning**, and **model accuracy testing**.
+
+The evaluation covers key performance metrics, including:
+
+* **Accuracy**
+* **Precision**
+* **Recall**
+* **F1-Score**
+* **ROC-AUC**
+
+**Fraud Detection with Random Forest & Logistic Regression**
+
 
 <br>
 
@@ -442,10 +463,6 @@ print(df[df['outlier'] == -1])
 
 
 ##  [Cell 1]() -  Data loading and Initial Understanding
-
-<br>
-
-Below is the structured fraud detection code, cell-by-cell for including explanations about the dataset and additional techniques such as SMOTE for class balancing and Random Forest hyperparameter tuning.
 
 
 <br><br>
