@@ -383,7 +383,7 @@ Fraud mitigation includes prevention (security measures) and detection (rapid id
 
 > [!TIP]
 >
-> [Access Code]() - Fraud Detection with Random Forest & Logistic Regression
+> [Access Code](https://github.com/Quantum-Software-Development/5-DataMining_DataCleaning_Preparation_Anomalies_Outlier/blob/fb8df7943f37ca911b41d0c83de18ecad7434f74/titanic_exploratory_analysis/titanic_exploratory_analysis%20.ipynb): Titanic - Exploratory Data Analysis
 >
 >
 
@@ -391,7 +391,7 @@ Fraud mitigation includes prevention (security measures) and detection (rapid id
 <br><br>
 
 
-<!-- =======================================START TITANIC Coide =========================================== 
+<!-- =======================================START TITANIC Code =========================================== 
 
 ```python
 import pandas as pd
@@ -454,7 +454,7 @@ The evaluation covers key performance metrics, including:
 
 > [!TIP]
 >
-> [Access Code](https://github.com/Quantum-Software-Development/5-DataMining_DataCleaning_Preparation_Anomalies_Outlier/blob/a33fdc3801ff33ff9a0030c8e735558d374e9b7e/Fraud_Detection_RandonForrest_Logistic_Regression__MiniData/Code/Fraud_Detection_RandonForrest_Logistic_Regression__MiniData.ipynb) - Fraud Detection with Random Forest & Logistic Regression
+> [Access Code](https://github.com/Quantum-Software-Development/5-DataMining_DataCleaning_Preparation_Anomalies_Outlier/blob/a33fdc3801ff33ff9a0030c8e735558d374e9b7e/Fraud_Detection_RandonForrest_Logistic_Regression__MiniData/Code/Fraud_Detection_RandonForrest_Logistic_Regression__MiniData.ipynb): Fraud Detection with Random Forest & Logistic Regression
 >
 >
 
