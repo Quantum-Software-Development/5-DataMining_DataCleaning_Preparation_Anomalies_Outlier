@@ -485,36 +485,16 @@ turquoise_palette = ['#40E0D0', '#48D1CC', '#00CED1', '#5F9EA0', '#008B8B']
 
 <br><br>
 
-###  [Cell 2]() -Exploratory Data Analysis (EDA) - Initial Step
+###  [Cell 2]() - Exploratory Data Analysis (EDA) 
 
-This code block performs the initial steps of a data analysis workflow:
+<br>
 
-## Library Import
-It imports necessary libraries like `pandas` for data manipulation, `matplotlib.pyplot` for plotting, and `seaborn` for enhanced visualizations.
-
-## Data Loading
-It loads the Iris dataset, which is a small, well-known dataset often used for classification examples. It then creates a pandas DataFrame from this data.
-
-## Preparation for Binary Classification
-The original Iris dataset has three classes. This code filters the data to keep only two of these classes (Versicolor and Virginica) and renames them to 0 and 1 for binary classification purposes.
-
-## Initial Data Inspection
-*   Displays the first few rows of the processed binary dataset (`df_binary.head()`).
-*   Provides a concise summary of the DataFrame's structure and data types (`df_binary.info()`).
-*   Shows the count of instances for each target class (`df_binary['target'].value_counts()`).
-
-This helps understand the data's format, missing values (if any), and class balance.
-
-## Plotting Configuration
-It sets up `matplotlib` to use a dark background style and sets text/element colors to white, which is suitable for dark mode environments.
-
-## Color Palette Definition
-It defines a list of turquoise colors to be used later for visualizations.
-
-In essence, this block prepares the data for analysis and provides a foundational look at its characteristics before proceeding to more in-depth exploration or modeling.
+This code block carries out the initial steps of a data analysis workflow.
+In essence, it prepares the dataset for further exploration and offers a first look at its main characteristics, laying the groundwork for more detailed analysis or modeling.
 
 
 <br><br>
+
 
 ```python
 import os
