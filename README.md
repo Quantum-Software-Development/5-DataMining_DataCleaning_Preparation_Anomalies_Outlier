@@ -636,9 +636,9 @@ plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
 <br><br>
 
 
-##  [Cell 3]() - ## Data preparation
+##  [Cell 3]() cData preparation
 
-<br><br>
+<br>
 
 ```python
 # 1. Check for missing values in the df_binary DataFrame and print the count for each column.
@@ -689,9 +689,21 @@ print(f"y_train shape: {y_train.shape}, y_test shape: {y_test.shape}")
 
 <br><br>
 
+##  [Cell 4]() Handle class imbalance
 
+<br>
 
+```python
+# 1. Check the class distribution of the training set (y_train) to confirm if class imbalance exists.
+# Print the value counts with a dual-language explanation.
+# 1. Verificar a distribuição de classes do conjunto de treinamento (y_train) para confirmar se existe desequilíbrio de classes.
+# Imprimir a contagem de valores com uma explicação em dois idiomas.
+print("Class distribution in the training set (y_train):")
+# Distribuição de classes no conjunto de treinamento (y_train):
+display(y_train.value_counts())
+```
 
+<br><br>
 
 
 
