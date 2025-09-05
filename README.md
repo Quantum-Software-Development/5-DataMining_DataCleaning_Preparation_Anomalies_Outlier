@@ -424,12 +424,12 @@ print(df[df['outlier'] == -1])
 <!-- =======================================START Fraud Detction CODE ===========================================-->
 
 
-## Python Example: [Fraud Detection with Mini Data]()
+# Python Example: [Fraud Detection with Mini Data]()
 
 <br>
 
 
-###  [Cell 1]() -  Data loading and Initial Understanding
+##  [Cell 1]() -  Data loading and Initial Understanding
 
 <br>
 
@@ -496,7 +496,7 @@ turquoise_palette = ['#40E0D0', '#48D1CC', '#00CED1', '#5F9EA0', '#008B8B']
 
 <br><br>
 
-###  [Cell 2]() - Exploratory Data Analysis (EDA) 
+##  [Cell 2]() - Exploratory Data Analysis (EDA) 
 
 <br>
 
@@ -607,7 +607,7 @@ plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
 <br><br>
 
 
-###  [Cell 3]() - ## Data preparation
+##  [Cell 3]() - ## Data preparation
 
 <br><br>
 
