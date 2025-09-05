@@ -378,7 +378,7 @@ Fraud mitigation includes prevention (security measures) and detection (rapid id
 
 
 
-<br><br>
+<!-- =======================================START TITANIC Coide =========================================== 
 
 ## Python Example: [Data Cleaning and Anomaly Detection]()
 
@@ -416,17 +416,28 @@ print(df[df['outlier'] == -1])
 
 ```
 
-<br><br>
+<!-- =======================================TITSNIC END  ===========================================  -->
+
+
+<br><br><br>
+
+<!-- =======================================START Fraud Detction CODE ===========================================-->
 
 
 ## Python Example: [Fraud Detection with Mini Data]()
 
 <br>
 
-###  [Cell 1]() - Below is the structured fraud detection code, cell-by-cell for including explanations about the dataset and additional techniques such as SMOTE for class balancing and Random Forest hyperparameter tuning.
+
+###  [Cell 1]() -  Data loading and Initial Understanding
+
+<br>
+
+Below is the structured fraud detection code, cell-by-cell for including explanations about the dataset and additional techniques such as SMOTE for class balancing and Random Forest hyperparameter tuning.
 
 
 <br><br>
+
 
 ```python
 import pandas as pd
@@ -491,7 +502,6 @@ turquoise_palette = ['#40E0D0', '#48D1CC', '#00CED1', '#5F9EA0', '#008B8B']
 
 This code block carries out the initial steps of a data analysis workflow.
 In essence, it prepares the dataset for further exploration and offers a first look at its main characteristics, laying the groundwork for more detailed analysis or modeling.
-
 
 <br><br>
 
@@ -593,12 +603,62 @@ plt.savefig(f'{plot_dir}/correlation_matrix_heatmap.png') # Save heatmap plot
 <img width="1064" height="914" alt="Image" src="https://github.com/user-attachments/assets/0fac7a0a-37aa-4319-a2c6-6189ce46b46f" />
 
 
+
 <br><br>
 
 
+###  [Cell 3]() - ## Data preparation
 
+<br><br>
 
-====================================🏄 Building ....===================================
+```python
+# 1. Check for missing values in the df_binary DataFrame and print the count for each column.
+# 1. Verificar valores ausentes no DataFrame df_binary e imprimir a contagem para cada coluna.
+print("Checking for missing values / Verificando valores ausentes:")
+print(df_binary.isnull().sum())
+
+# 2. If missing values are found, handle them appropriately for numerical data (e.g., imputation with the mean or median).
+# Based on the previous df_binary.info() output, there are no missing values.
+# Com base na saída anterior de df_binary.info(), não há valores ausentes.
+# No action needed for missing values in this case.
+# Nenhuma ação necessária para valores ausentes neste caso.
+
+# 3. Separate the features (X) and the target variable (y) from the df_binary DataFrame.
+# 3. Separar as características (X) e a variável alvo (y) do DataFrame df_binary.
+X = df_binary.drop('target', axis=1)
+y = df_binary['target']
+print("\nFeatures (X) and Target (y) separated. / Características (X) e Alvo (y) separados.")
+
+# 4. Scale the numerical features using StandardScaler.
+# Fit the scaler only on the training data to prevent data leakage.
+# 4. Escalar as características numéricas usando StandardScaler.
+# Ajustar o scaler apenas nos dados de treinamento para evitar vazamento de dados.
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+
+# 5. Split the data into training and testing sets.
+# 5. Dividir os dados em conjuntos de treinamento e teste.
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y) # Using stratify for balanced classes
+# Usando stratify para classes balanceadas
+
+# Fit and transform the scaler on the training data
+# Ajustar e transformar o scaler nos dados de treinamento
+X_train_scaled = scaler.fit_transform(X_train)
+
+# Transform the test data using the fitted scaler
+# Transformar os dados de teste usando o scaler ajustado
+X_test_scaled = scaler.transform(X_test)
+
+print("\nData split into training and testing sets (80/20). / Dados divididos em conjuntos de treinamento e teste (80/20).")
+print("Features scaled using StandardScaler. / Características escaladas usando StandardScaler.")
+print(f"X_train shape: {X_train_scaled.shape}, X_test shape: {X_test_scaled.shape}")
+print(f"y_train shape: {y_train.shape}, y_test shape: {y_test.shape}")
+```
+
+<br><br>
 
 
 
