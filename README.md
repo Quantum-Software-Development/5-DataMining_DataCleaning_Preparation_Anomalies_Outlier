@@ -454,7 +454,7 @@ The evaluation covers key performance metrics, including:
 
 > [!TIP]
 >
-> [Access Code](https://github.com/Quantum-Software-Development/5-DataMining_DataCleaning_Preparation_Anomalies_Outlier/blob/cf75362829729905cad42950a70ce35ec1755506/Code_Fraud_Detection_RandonForrest_Logistic%20Regressio/Code_Fraud_Detection_RandonForrest_Logistic%20Regression/Fraud_Detection_RandonForrest_Logistic_Regression__MiniData.ipynb) - Fraud Detection with Random Forest & Logistic Regression
+> [Access Code](https://github.com/Quantum-Software-Development/5-DataMining_DataCleaning_Preparation_Anomalies_Outlier/blob/a33fdc3801ff33ff9a0030c8e735558d374e9b7e/Fraud_Detection_RandonForrest_Logistic_Regression__MiniData/Code/Fraud_Detection_RandonForrest_Logistic_Regression__MiniData.ipynb) - Fraud Detection with Random Forest & Logistic Regression
 >
 >
 
