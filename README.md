@@ -80,7 +80,7 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 > 
 >  This repository makes part of the  Data Mining, course from the undergraduate program Humanities, AI and Data Science at PUC-SP.
 >
->  Access Data Mining [Main Reposi tory](https://github.com/Quantum-Software-Development/1-Main_DataMining_Repository)
+>   ### ☞ **Access Data Mining [Main Repository](https://github.com/Quantum-Software-Development/1-Main_DataMining_Repository)**
 > 
 
 <!-- =======================================END DEFAULT HEADER ===========================================  -->
