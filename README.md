@@ -118,6 +118,8 @@ It constitutes a structured starting point for the systematic study and applicat
 - [Non-Technical Losses in Electrical Energy](#non-technical-losses-in-electrical-energy)
 - [Energy Load Segmentation](#energy-load-segmentation)
 - [Steel Process Modeling](#steel-process-modeling)
+- [Data Cleaning by Zara Amini](https://github.com/Quantum-Software-Development/1-DataMining_Main_Repository/blob/cb4075948c0ae9f90ead385d620147daf0641f7c/Data%20Cleaning%20by%20Zahra%20Amini%20.pdf)
+2. [Objectives](#objectives)
 
 
 <br><br>
